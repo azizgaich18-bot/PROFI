@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0 H0 V48" fill="none" stroke="#165451" stroke-opacity="0.35" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="480" fill="url(#grid)"/>
+  <g stroke="#2a827e" stroke-opacity="0.28" fill="none">
+    <circle cx="120" cy="120" r="42"/>
+    <circle cx="120" cy="120" r="42" stroke-dasharray="3 6"/>
+    <path d="M78 120 H162 M120 78 V162" stroke-opacity="0.35"/>
+    <circle cx="120" cy="120" r="2" fill="#2a827e" stroke="none" fill-opacity="0.4"/>
+    <path d="M300 60 l60 104 h-120 z"/>
+    <path d="M300 60 l60 104 M240 164 l60 -104"/>
+    <circle cx="300" cy="60" r="2" fill="#2a827e" stroke="none" fill-opacity="0.4"/>
+    <path d="M60 330 q40 -50 80 0 t80 0 t80 0 t80 0" stroke-opacity="0.4"/>
+    <path d="M60 352 h360" stroke-dasharray="2 8" stroke-opacity="0.3"/>
+    <rect x="330" y="300" width="90" height="60" stroke-dasharray="5 5"/>
+    <path d="M330 300 l90 60 M420 300 l-90 60" stroke-opacity="0.25"/>
+    <path d="M180 420 a60 60 0 0 1 120 0" stroke-opacity="0.35"/>
+    <path d="M240 420 v-60 M240 420 l-52 -30 M240 420 l52 -30" stroke-opacity="0.25"/>
+  </g>
+  <g fill="#165451" fill-opacity="0.5" font-family="monospace" font-size="13">
+    <text x="190" y="105">∫f(x)dx</text>
+    <text x="330" y="220">F = m·a</text>
+    <text x="70" y="240">x²+y²=r²</text>
+    <text x="250" y="400">e^(iπ)+1=0</text>
+    <text x="60" y="60">ΔpH</text>
+  </g>
+</svg>

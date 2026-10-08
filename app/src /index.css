@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 183 47% 5%;
+    --foreground: 180 30% 93%;
+    --card: 183 40% 8%;
+    --card-foreground: 180 30% 93%;
+    --popover: 183 40% 8%;
+    --popover-foreground: 180 30% 93%;
+    --primary: 174 72% 40%;
+    --primary-foreground: 180 100% 97%;
+    --secondary: 183 35% 13%;
+    --secondary-foreground: 180 25% 88%;
+    --muted: 183 30% 14%;
+    --muted-foreground: 182 16% 58%;
+    --accent: 174 60% 18%;
+    --accent-foreground: 174 80% 85%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 182 30% 18%;
+    --input: 182 30% 20%;
+    --ring: 174 72% 45%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Space Grotesk", "Noto Kufi Arabic", system-ui, sans-serif;
+    font-feature-settings: "tnum" 1;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #071213;
+    background-image:
+      radial-gradient(1200px 600px at 85% -10%, rgba(22, 84, 81, 0.28), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(20, 60, 72, 0.3), transparent 55%),
+      url("/assets/engineering-bg.svg");
+    background-attachment: fixed;
+  }
+  .font-mono {
+    font-family: "JetBrains Mono", "Noto Kufi Arabic", monospace;
+  }
+  [lang="ar"],
+  .ar {
+    font-family: "Noto Kufi Arabic", "Space Grotesk", sans-serif;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-border bg-card/80 backdrop-blur-sm;
+  }
+  .label-tech {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground;
+  }
+}
